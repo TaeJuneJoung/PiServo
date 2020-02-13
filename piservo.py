@@ -47,7 +47,8 @@ class Servo:
         GPIO.cleanup()
 
 if __name__ == '__main__':
-    if(servo_pin and servo_angle):
+    if(servo_pin and servo_angle >= 0):
+        GPIO.setmode(GPIO.BOARD)
         GPIO.setup(servo_pin, GPIO.OUT)
         argv_set_angle()
         GPIO.cleanup()
