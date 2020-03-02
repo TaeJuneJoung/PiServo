@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-from piserovo import Servo
+from piservo import Servo
 import decimal
 
 servo_pin = int(input('Enter Servo Motor Pin Number'))
